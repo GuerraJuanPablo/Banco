@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Cliente> clientes = new ArrayList<>();
-        Long idBuscado = 0l;
+        Long idBuscado = 1l;
         long id = 1l;
         
         LocalDate fechaDeHoy = LocalDate.of(2023, 3, 27);
@@ -40,10 +40,9 @@ public class Main {
 
         for (int i = 0; i < clientes.size(); i++) {
             Cliente x = clientes.get(i);
-            //No logre conseguir el id de cada objeto de la clase clientes
-            //if(idBuscado == x.getIdCliente()){
-            //    clientes.remove(i)
-            //}      
+            if(idBuscado == x.getIdCliente()){
+                clientes.remove(i);
+            }      
           }
           
         System.out.println(antiguedadDeCuenta);
