@@ -2,6 +2,7 @@ git fetch
 git branch feature/banco-01
 git checkout feature/banco-01
 git add ComandosGit.txt
+git status
 git commit -a -m "Añadio Features a main"
 git merge
 git push -u origin feature/banco-01
