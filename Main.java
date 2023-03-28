@@ -7,6 +7,7 @@ public class Main {
         ArrayList<Cliente> clientes = new ArrayList<>();
         Long idBuscado = 0l;
         long id = 1l;
+        
         LocalDate fechaDeHoy = LocalDate.of(2023, 3, 27);
         LocalDate fecha = LocalDate.of(2022, 04, 15);
         long antiguedadDeCuenta = ChronoUnit.MONTHS.between(fecha, fechaDeHoy);
@@ -39,6 +40,7 @@ public class Main {
 
         for (int i = 0; i < clientes.size(); i++) {
             Cliente x = clientes.get(i);
+            //No logre conseguir el id de cada objeto de la clase clientes
             //if(idBuscado == x.getIdCliente()){
             //    clientes.remove(i)
             //}      
