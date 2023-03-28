@@ -4,5 +4,6 @@ git checkout feature/banco-01
 git add ComandosGit.txt
 git status
 git commit -a -m "Añadio Features a main"
-git merge
+git checkout master
+git merge feature/banco-01
 git push -u origin feature/banco-01
