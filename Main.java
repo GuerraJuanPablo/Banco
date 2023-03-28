@@ -36,12 +36,14 @@ public class Main {
             ClienteB clienteB1 = new ClienteB(id, nombre, apellido, telefono, email, fecha, cuentas1, ingresoMensual, prestamos2);
             clientes.add(clienteB1);
         }
+
         for (int i = 0; i < clientes.size(); i++) {
             Cliente x = clientes.get(i);
             //if(idBuscado == x.getIdCliente()){
             //    clientes.remove(i)
             //}      
           }
+          
         System.out.println(antiguedadDeCuenta);
         System.out.println(clientes);
     }   
